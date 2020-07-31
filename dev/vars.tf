@@ -11,5 +11,4 @@ variable "PATH_TO_PUBLIC_KEY" {
 }
 
 variable "AWS_ACCOUNT" {
-  default = "873301793325"
 }
