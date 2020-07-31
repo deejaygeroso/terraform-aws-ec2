@@ -1,4 +1,4 @@
-module "main-vpc" {
+module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
 
   name = "vpc-${var.ENV}"
