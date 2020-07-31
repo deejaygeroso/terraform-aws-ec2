@@ -1,6 +1,3 @@
-variable "AWS_ACCOUNT" {
-}
-
 variable "AWS_REGION" {
 }
 
