@@ -33,7 +33,7 @@ Tip: You can add `terraform.tfvars` to `.gitignore` file, if you choose to add s
 
 Execute command `ssh-keygen -f mykey` inside the director of either `/stage` or `/prod`.  
 This will create two files: `mykey` and `mykey.pub`.  
-If you want to modify the filename, just update the value `RSA_KEY_FILENAME` on the `terraform.tfvars` file
+If you want to modify the filename, just update the value of `RSA_KEY_FILENAME` on the `terraform.tfvars` file
 
 ## Project Files and Directory Structure
 
