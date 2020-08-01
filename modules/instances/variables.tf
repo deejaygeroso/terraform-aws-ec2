@@ -8,15 +8,15 @@ variable "INSTANCE_TYPE" {
   description = "EC2 instance type"
 }
 
-variable "PATH_TO_PUBLIC_KEY" {
-  default     = "mykey.pub"
-  description = "A public security credenttial needed to communicate with AWS"
+variable "PUBLIC_SUBNETS" {
+  default     = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
+  description = "Public CIDR blocks for your availabilty zones. Values should the same with the VPC public subnets"
+  type        = list
 }
 
-variable "PUBLIC_SUBNETS" {
-  default     = ["10.10.101.0/24", "10.10.102.0/24", "10.10.103.0/24"]
-  description = "Public CIDR blocks for your availabilty zones where your EC2 instance will reside"
-  type        = list
+variable "RSA_KEY_FILENAME" {
+  default     = "mykey"
+  description = "Filename of RSA key"
 }
 
 variable "VPC_ID" {

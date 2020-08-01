@@ -55,9 +55,9 @@ resource "aws_security_group" "allow-ssh" {
 }
 
 # ---------------------------------------------------------
-# EC2 key pair
+# EC2 RSA Key Pair
 # ---------------------------------------------------------
 resource "aws_key_pair" "mykeypair" {
-  key_name   = "mykeypair-${var.ENV}"
-  public_key = file("${path.root}/${var.PATH_TO_PUBLIC_KEY}")
+  key_name   = "${var.RSA_KEY_FILENAME}-${var.ENV}"
+  public_key = file("${path.root}/${var.RSA_KEY_FILENAME}.pub")
 }

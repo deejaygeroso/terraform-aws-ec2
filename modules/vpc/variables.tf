@@ -15,12 +15,12 @@ variable "CIDR" {
 
 variable "PRIVATE_SUBNETS" {
   default     = ["10.0.101.0/24", "10.0.102.0/24", "10.0.103.0/24"]
-  description = "Public CIDR blocks for your availabilty zones where your EC2 instance will reside"
+  description = "Private CIDR blocks for your availabilty zones"
   type        = list
 }
 
 variable "PUBLIC_SUBNETS" {
   default     = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
-  description = "Public CIDR blocks for your availabilty zones where your EC2 instance will reside"
+  description = "Public CIDR blocks for your availabilty zones"
   type        = list
 }

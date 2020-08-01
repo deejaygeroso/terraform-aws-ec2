@@ -17,8 +17,9 @@ module "main-vpc" {
 module "instances" {
   source = "../modules/instances"
 
-  ENV            = var.ENV
-  INSTANCE_TYPE  = var.INSTANCE_TYPE
-  PUBLIC_SUBNETS = module.main-vpc.public_subnets
-  VPC_ID         = module.main-vpc.vpc_id
+  ENV              = var.ENV
+  INSTANCE_TYPE    = var.INSTANCE_TYPE
+  RSA_KEY_FILENAME = var.RSA_KEY_FILENAME
+  PUBLIC_SUBNETS   = module.main-vpc.public_subnets
+  VPC_ID           = module.main-vpc.vpc_id
 }

@@ -18,24 +18,19 @@ variable "INSTANCE_TYPE" {
   description = "EC2 instance type"
 }
 
-variable "PATH_TO_PRIVATE_KEY" {
-  default     = "mykey"
-  description = "A private security credenttial needed to communicate with AWS"
-}
-
-variable "PATH_TO_PUBLIC_KEY" {
-  default     = "mykey.pub"
-  description = "A public security credenttial needed to communicate with AWS"
-}
-
 variable "PRIVATE_SUBNETS" {
   default     = ["10.0.101.0/24", "10.0.102.0/24", "10.0.103.0/24"]
-  description = "Public CIDR blocks for your availabilty zones where your EC2 instance will reside"
+  description = "Private CIDR blocks for your availabilty zones"
   type        = list
 }
 
 variable "PUBLIC_SUBNETS" {
   default     = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
-  description = "Public CIDR blocks for your availabilty zones where your EC2 instance will reside"
+  description = "Public CIDR blocks for your availabilty zones"
   type        = list
+}
+
+variable "RSA_KEY_FILENAME" {
+  default     = "mykey"
+  description = "Filename of RSA key"
 }
