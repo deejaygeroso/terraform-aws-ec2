@@ -17,8 +17,8 @@ resource "aws_instance" "instance" {
   key_name      = aws_key_pair.mykeypair.key_name
   subnet_id     = element(var.PUBLIC_SUBNETS, 0)
   tags = {
-    Name         = "instance-${var.ENV}"
     Environmnent = var.ENV
+    Name         = "instance-${var.ENV}"
   }
   vpc_security_group_ids = [aws_security_group.allow-ssh.id]
 }
@@ -27,20 +27,20 @@ resource "aws_security_group" "allow-ssh" {
   name        = "allow-ssh-${var.ENV}"
   description = "security group that allows ssh and all egress traffic"
   egress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
+    from_port   = 0
+    protocol    = "-1"
+    to_port     = 0
   }
   ingress {
-    from_port   = 22
-    to_port     = 22
-    protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
+    from_port   = 22
+    protocol    = "tcp"
+    to_port     = 22
   }
   tags = {
-    Name         = "allow-ssh"
     Environmnent = var.ENV
+    Name         = "allow-ssh"
   }
   vpc_id = var.VPC_ID
 }
