@@ -1,6 +1,7 @@
-# Terraform Module for Launching AWS VPC and EC2 instance
+# Terraform AWS EC2 Module
 
-This is a terraform module that allows you to provision AWS VPC and EC2 instance using ubuntu-trusty as its default OS.
+This is a terraform module that allows you to provision AWS VPC and EC2 instance.  
+Ec2 instance is using ubuntu-trusty as its default OS.
 
 ## Getting Started
 
@@ -30,7 +31,8 @@ Tip: You can add `terraform.tfvars` to `.gitignore` file, if you choose to add s
 
 ## Add RSA Key Pair
 
-Execute command `ssh-keygen -f mykey` inside the director of either `/stage` or `/prod`. This will create two files: `mykey` and `mykey.pub`.
+Execute command `ssh-keygen -f mykey` inside the director of either `/stage` or `/prod`.  
+This will create two files: `mykey` and `mykey.pub`.  
 If you want to modify the filename, just update the value `RSA_KEY_FILENAME` on the `terraform.tfvars` file
 
 ## Project Files and Directory Structure
