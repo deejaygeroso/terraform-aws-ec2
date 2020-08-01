@@ -21,7 +21,7 @@ Ec2 instance is using ubuntu-trusty as its default OS.
 Tip: You can add `terraform.tfvars` to `.gitignore` file, if you choose to add some credentials that does not need to be publicly available.
 | Variables | Description | Default Values |
 | :---------- | :----------- | :-------------: |
-| AWS_REGION | A seperate geographic area that consist of multiple isolated availability zones | us-east-1
+| AWS_REGION | Geographic area where your VPC and EC2 will be provisioned | us-east-1
 | CIDR | Docker configuration for stage and prod | 10.0.0.0/16 |
 | ENV | Project environment: dev, stage or prod | stage |
 | INSTANCE_TYPE | EC2 instance type | t2.micro |
