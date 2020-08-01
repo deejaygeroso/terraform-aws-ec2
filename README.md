@@ -25,8 +25,8 @@ Tip: You can add `terraform.tfvars` to `.gitignore` file, if you choose to add s
 | CIDR | Docker configuration for stage and prod | 10.0.0.0/16 |
 | ENV | Project environment: dev, stage or prod | stage |
 | INSTANCE_TYPE | EC2 instance type | t2.micro |
-| PRIVATE_SUBNETS | Private CIDR blocks for your availabilty zones | 10.0.101.0/24, 10.0.102.0/24, 10.0.103.0/24 |
-| PUBLIC_SUBNETS | Public CIDR blocks for your availabilty zones | 10.0.1.0/24, 10.0.2.0/24, 10.0.3.0/24 |
+| PRIVATE_SUBNETS | Private CIDR blocks for your availabilty zones | 10.0.101.0/24,  10.0.102.0/24,  10.0.103.0/24 |
+| PUBLIC_SUBNETS | Public CIDR blocks for your availabilty zones | 10.0.1.0/24,  10.0.2.0/24,  10.0.3.0/24 |
 | RSA_KEY_FILENAME | Filename of RSA key | mykey |
 
 ## Add RSA Key Pair
