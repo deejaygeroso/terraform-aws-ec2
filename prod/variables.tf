@@ -3,14 +3,19 @@ variable "AWS_REGION" {
   description = "A seperate geographic area that consist of multiple isolated availability zones"
 }
 
+variable "CIDR" {
+  default     = "10.0.0.0/16"
+  description = "The CIDR block for the VPC"
+}
+
 variable "ENV" {
   default     = "stage"
   description = "Project environment: dev, stage or prod"
 }
 
-variable "CIDR" {
-  default     = "10.0.0.0/16"
-  description = "The CIDR block for the VPC"
+variable "INSTANCE_TYPE" {
+  default     = "t2.micro"
+  description = "EC2 instance type"
 }
 
 variable "PATH_TO_PRIVATE_KEY" {

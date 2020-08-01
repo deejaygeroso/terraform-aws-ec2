@@ -7,6 +7,7 @@ module "main-vpc" {
   AWS_REGION      = var.AWS_REGION
   CIDR            = var.CIDR
   ENV             = var.ENV
+  INSTANCE_TYPE   = var.INSTANCE_TYPE
   PRIVATE_SUBNETS = var.PRIVATE_SUBNETS
   PUBLIC_SUBNETS  = var.PUBLIC_SUBNETS
 }

@@ -18,6 +18,7 @@ module "instances" {
   source = "../modules/instances"
 
   ENV            = var.ENV
+  INSTANCE_TYPE  = var.INSTANCE_TYPE
   PUBLIC_SUBNETS = module.main-vpc.public_subnets
   VPC_ID         = module.main-vpc.vpc_id
 }
