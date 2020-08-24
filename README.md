@@ -14,7 +14,7 @@ Ec2 instance is using ubuntu-trusty as its default OS.
 7. Make sure you have the right variables needed on `terraform.tfvars` file. (See terraform variables table).
 8. Run command `terraform init`.
 9. Check if everything is setup correctly by running command: `terraform plan`.
-10. Run command `terraform deploy`.
+10. Run command `terraform apply`.
 
 ## Terraform Variables
 
